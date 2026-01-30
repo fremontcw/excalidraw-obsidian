@@ -82,6 +82,27 @@ This creates diagrams that feel approachable but still technical.
 | Background Light | `#f8fafc` | Element backgrounds |
 | Background Accent | `#f0fdfa` | Highlighted sections |
 
+## Dependencies
+
+### System Requirements
+
+- **Node.js** (v18+) - Required to run the PNG converter
+
+### npm Packages
+
+| Package | Purpose |
+|---------|---------|
+| [lz-string](https://www.npmjs.com/package/lz-string) | Decompress Obsidian's LZ-String compressed Excalidraw JSON |
+| [sharp](https://www.npmjs.com/package/sharp) | Convert SVG to PNG with high quality rendering |
+
+These are installed automatically when you run `npm install`.
+
+### Bundled Assets
+
+| Asset | Purpose |
+|-------|---------|
+| `Virgil.woff2` | Excalidraw's hand-drawn font (OFL-1.1 license) |
+
 ## File Structure
 
 ```
