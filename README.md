@@ -82,11 +82,27 @@ This creates diagrams that feel approachable but still technical.
 | Background Light | `#f8fafc` | Element backgrounds |
 | Background Accent | `#f0fdfa` | Highlighted sections |
 
+## Requirements
+
+![Requirements](docs/requirements.png)
+
+### Required
+
+| Requirement | Purpose |
+|-------------|---------|
+| **Claude Code** | Run the `/excalidraw` skill and PostToolUse hooks |
+| **Node.js** (v18+) | Run the PNG converter script |
+
+### Optional (for editing diagrams)
+
+| Requirement | Purpose |
+|-------------|---------|
+| **[Obsidian](https://obsidian.md)** | View and edit `.excalidraw.md` files |
+| **[Excalidraw plugin](https://github.com/zsviczian/obsidian-excalidraw-plugin)** | Enable Excalidraw editing mode in Obsidian |
+
+> **Note:** You don't need Obsidian to use this plugin! The PNG files work anywhere. Obsidian + Excalidraw plugin are only needed if you want to manually edit the diagrams or use them in your Obsidian vault.
+
 ## Dependencies
-
-### System Requirements
-
-- **Node.js** (v18+) - Required to run the PNG converter
 
 ### npm Packages
 
