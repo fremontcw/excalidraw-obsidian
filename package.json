@@ -1,0 +1,10 @@
+{
+  "name": "excalidraw-obsidian-plugin",
+  "version": "1.0.0",
+  "description": "Excalidraw to PNG converter for Claude Code",
+  "private": true,
+  "dependencies": {
+    "lz-string": "^1.5.0",
+    "sharp": "^0.33.2"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "excalidraw-obsidian",
+  "version": "1.0.0",
+  "description": "Create professional Excalidraw diagrams for Obsidian with automatic PNG preview generation",
+  "author": "Chuck",
+  "skills": [
+    {
+      "name": "excalidraw",
+      "path": "skills/excalidraw.md",
+      "description": "Create professional Excalidraw diagrams for Obsidian. Generate flow diagrams, architecture charts, and visual documentation with a cohesive, clean style. Outputs .excalidraw.md files viewable in Obsidian's Excalidraw plugin."
+    }
+  ],
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/excalidraw-to-png.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "setup": {
+    "instructions": "Run 'npm install' in the plugin directory to install dependencies (lz-string, sharp).",
+    "command": "cd ${CLAUDE_PLUGIN_ROOT} && npm install"
+  }
+}
